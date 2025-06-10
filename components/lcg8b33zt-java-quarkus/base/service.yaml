@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: lcg8b33zt-java-quarkus
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: lcg8b33zt-java-quarkus 
+  name: lcg8b33zt-java-quarkus
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: lcg8b33zt-java-quarkus 
